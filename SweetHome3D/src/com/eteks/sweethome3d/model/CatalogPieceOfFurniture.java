@@ -538,7 +538,15 @@ public class CatalogPieceOfFurniture implements Comparable<CatalogPieceOfFurnitu
   public String getId() {
     return this.id;
   }
-  
+
+  /**
+   * Returns the volume of this piece of furniture.
+   */
+  @Override
+  public float getVolume() {
+    return getWidth() * getDepth() * getHeight();
+  }
+
   /**
    * Returns the name of this piece of furniture.
    */

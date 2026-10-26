@@ -26,6 +26,12 @@ import java.math.BigDecimal;
  * @author Emmanuel Puybaret
  */
 public interface PieceOfFurniture {
+
+  /**
+   * Returns the volume of this piece of furniture.
+   */
+  public abstract float getVolume();
+
   /**
    * Returns the name of this piece of furniture.
    */
